@@ -1,0 +1,17 @@
+/* app.css */
+
+/* Fade-in body content on load */
+body {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Optional: Slow pulse animation for About section bubble */
+@keyframes pulse-slow {
+  0%, 100% { transform: scale(1); opacity: 0.6; }
+  50% { transform: scale(1.2); opacity: 1; }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 6s infinite;
+}
