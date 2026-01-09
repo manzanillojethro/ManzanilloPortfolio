@@ -1,4 +1,4 @@
-# Jethro Manzanillo Portfolio
+# Jethro Manzanillo's Portfolio
 
 Welcome to my personal portfolio! This repository contains a static website showcasing my skills, education, projects, and contact information.
 
@@ -30,4 +30,5 @@ The website is a fully static HTML/CSS/JS site. It includes the following sectio
 - Responsive design for all screen sizes  
 
 ## Project Structure
+
 
