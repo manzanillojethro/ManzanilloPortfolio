@@ -1144,68 +1144,204 @@
         </div>
     </div>
 
-    <!-- SECTION 3: EDUCATION & EXPERIENCES -->
-    <div id="education" class="section-3 w-full border-t border-[#717744]/10 py-20 relative overflow-hidden transition-theme">
-        <div class="absolute -top-10 -left-10 w-40 h-40 bg-[#717744]/5 rounded-full blur-2xl pointer-events-none"></div>
-        <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-[#8B9259]/5 rounded-full blur-2xl pointer-events-none"></div>
-        
-        <div class="max-w-6xl mx-auto px-6 relative z-10">
-            <div class="mb-16 border-b border-[#717744]/10 pb-6 flex flex-col md:flex-row md:items-end md:justify-between gap-4 transition-theme slide-in-up">
-                <div>
-                    <span class="text-xs font-mono uppercase tracking-widest text-[#8B9259] font-bold block mb-2">✦ Academic & Professional Journey</span>
-                    <h2 class="text-4xl md:text-5xl font-black text-[#3D4424] heading-font tracking-tight transition-theme">Education & Experiences</h2>
-                </div>
-                <p class="text-sm text-[#717744] max-w-xs font-medium md:text-right transition-theme">
-                    Merging rigorous technical training with hands-on professional experience.
-                </p>
+   <!-- SECTION 3: EDUCATION & EXPERIENCES -->
+<div id="education" class="section-3 w-full border-t border-[#717744]/10 py-20 relative overflow-hidden transition-theme">
+    <div class="absolute -top-10 -left-10 w-40 h-40 bg-[#717744]/5 rounded-full blur-2xl pointer-events-none"></div>
+    <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-[#8B9259]/5 rounded-full blur-2xl pointer-events-none"></div>
+    
+    <div class="max-w-6xl mx-auto px-6 relative z-10">
+        <div class="mb-16 border-b border-[#717744]/10 pb-6 flex flex-col md:flex-row md:items-end md:justify-between gap-4 transition-theme slide-in-up">
+            <div>
+                <span class="text-xs font-mono uppercase tracking-widest text-[#8B9259] font-bold block mb-2">✦ Academic & Professional Journey</span>
+                <h2 class="text-4xl md:text-5xl font-black text-[#3D4424] heading-font tracking-tight transition-theme">Education & Experiences</h2>
             </div>
+            <p class="text-sm text-[#717744] max-w-xs font-medium md:text-right transition-theme">
+                Merging rigorous technical training with hands-on professional experience.
+            </p>
+        </div>
 
-            <!-- Education with Horizontal Line Indicator -->
-            <div class="mb-16 slide-in-left">
-                <h3 class="text-sm font-mono uppercase tracking-widest text-[#8B9259] font-bold mb-8">✦ Education</h3>
+        <!-- Education with Horizontal Line Indicator -->
+        <div class="mb-16 slide-in-left">
+            <h3 class="text-sm font-mono uppercase tracking-widest text-[#8B9259] font-bold mb-8">✦ Education</h3>
+            
+            <div class="edu-horizontal-line stagger-children">
                 
-                <div class="edu-horizontal-line stagger-children">
+                <!-- Bicol University -->
+                <div class="edu-item">
+                    <div class="dot dot-primary"></div>
+                    <div class="line-connector"></div>
+                    <div class="edu-content">
+                        <span class="year">2021 — PRESENT</span>
+                        <h3 class="school">Bicol University</h3>
+                        <p class="program">BS in Information Technology</p>
+                        <div class="tags">
+                            <span class="edu-tag bg-[#3D4424] text-white border-[#3D4424]">Cum Laude Track</span>
+                            <span class="edu-tag">President's Lister</span>
+                            <span class="edu-tag">Dean's Lister</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pio Duran National HS -->
+                <div class="edu-item">
+                    <div class="dot dot-secondary"></div>
+                    <div class="line-connector"></div>
+                    <div class="edu-content">
+                        <span class="year">2017 — 2021</span>
+                        <h3 class="school">Pio Duran National HS</h3>
+                        <p class="program">Junior & Senior High School</p>
+                        <div class="tags">
+                            <span class="edu-tag">With High Honor</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Don Jose Pavia Central School -->
+                <div class="edu-item">
+                    <div class="dot dot-muted"></div>
+                    <div class="line-connector"></div>
+                    <div class="edu-content">
+                        <span class="year">2011 — 2016</span>
+                        <h3 class="school">Don Jose Pavia Central School</h3>
+                        <p class="program">Elementary Education</p>
+                        <div class="tags">
+                            <span class="edu-tag">With Honor</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Experiences Premium Card Carousel -->
+        <div id="experience" class="slide-in-right">
+            <div class="flex items-center justify-between mb-6">
+                <h3 class="text-sm font-mono uppercase tracking-widest text-[#8B9259] font-bold">✦ Professional Experiences</h3>
+                <div class="flex gap-2">
+                    <button onclick="changeExpSlide(-1)" class="exp-nav-btn" aria-label="Previous slide">⟵</button>
+                    <button onclick="changeExpSlide(1)" class="exp-nav-btn" aria-label="Next slide">⟶</button>
+                </div>
+            </div>
+
+            <div class="exp-carousel-container">
+                <div class="exp-carousel-track" id="expCarouselTrack">
                     
-                    <!-- Bicol University -->
-                    <div class="edu-item">
-                        <div class="dot dot-primary"></div>
-                        <div class="line-connector"></div>
-                        <div class="edu-content">
-                            <span class="year">2021 — PRESENT</span>
-                            <h3 class="school">Bicol University</h3>
-                            <p class="program">BS in Information Technology</p>
-                            <div class="tags">
-                                <span class="edu-tag bg-[#3D4424] text-white border-[#3D4424]">Cum Laude Track</span>
-                                <span class="edu-tag">President's Lister</span>
-                                <span class="edu-tag">Dean's Lister</span>
+                    <!-- Slide 1: OJT - Municipality of Ligao -->
+                    <div class="exp-carousel-slide">
+                        <div class="card-bg" style="background-image: url('images/lgu-ligao.jpg');"></div>
+                        <div class="card-overlay"></div>
+                        <div class="card-content">
+                            <div class="card-top">
+                                <span class="card-tagline">Building systems.</span>
+                                <span class="card-badge">OJT</span>
+                            </div>
+                            <div class="card-bottom">
+                                <div>
+                                    <h3 class="card-title">Municipality of Ligao</h3>
+                                    <p class="card-subtitle">LGU Ligao CPDO</p>
+                                    <p class="card-description">Built the Konstructo Building Permit Management System — a comprehensive platform digitizing the entire permit lifecycle.</p>
+                                </div>
+                                <div class="card-tags">
+                                    <span>Full-Stack</span>
+                                    <span>Laravel</span>
+                                    <span>Livewire</span>
+                                    <span>Feb 2026 – May 2026</span>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Pio Duran National HS -->
-                    <div class="edu-item">
-                        <div class="dot dot-secondary"></div>
-                        <div class="line-connector"></div>
-                        <div class="edu-content">
-                            <span class="year">2017 — 2021</span>
-                            <h3 class="school">Pio Duran National HS</h3>
-                            <p class="program">Junior & Senior High School</p>
-                            <div class="tags">
-                                <span class="edu-tag">With High Honor</span>
+                    <!-- Slide 2: Scientia Publication - Digital Artist -->
+                    <div class="exp-carousel-slide">
+                        <div class="card-bg" style="background-image: url('images/scientia.png');"></div>
+                        <div class="card-overlay"></div>
+                        <div class="card-content">
+                            <div class="card-top">
+                                <span class="card-tagline">Illustration for publication.</span>
+                                <span class="card-badge">BU College of Science</span>
+                            </div>
+                            <div class="card-bottom">
+                                <div>
+                                    <h3 class="card-title">Scientia Publication</h3>
+                                    <p class="card-subtitle">Digital Artist & Illustrator</p>
+                                    <p class="card-description">Creating original digital illustrations and artwork for publication. Developing visual concepts that bring editorial content to life through custom illustrations and graphic elements.</p>
+                                </div>
+                                <div class="card-tags">
+                                    <span>Digital Illustration</span>
+                                    <span>Editorial Art</span>
+                                    <span>2023 – Present</span>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Don Jose Pavia Central School -->
-                    <div class="edu-item">
-                        <div class="dot dot-muted"></div>
-                        <div class="line-connector"></div>
-                        <div class="edu-content">
-                            <span class="year">2011 — 2016</span>
-                            <h3 class="school">Don Jose Pavia Central School</h3>
-                            <p class="program">Elementary Education</p>
-                            <div class="tags">
-                                <span class="edu-tag">With Honor</span>
+                    <!-- Slide 3: Freelance Digital Artist -->
+                    <div class="exp-carousel-slide">
+                        <div class="card-bg" style="background-image: url('images/digital-art.png');"></div>
+                        <div class="card-overlay"></div>
+                        <div class="card-content">
+                            <div class="card-top">
+                                <span class="card-tagline">Create without limits.</span>
+                                <span class="card-badge">Freelance</span>
+                            </div>
+                            <div class="card-bottom">
+                                <div>
+                                    <h3 class="card-title">Digital Artist</h3>
+                                    <p class="card-subtitle">Independent Creative</p>
+                                    <p class="card-description">Custom digital illustrations, character designs, and background art for diverse clients across multiple industries.</p>
+                                </div>
+                                <div class="card-tags">
+                                    <span>Illustration</span>
+                                    <span>Character Design</span>
+                                    <span>2022 – Present</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4: Video Editing (updated - removed digital art) -->
+                    <div class="exp-carousel-slide">
+                        <div class="card-bg" style="background-image: url('images/video.png');"></div>
+                        <div class="card-overlay"></div>
+                        <div class="card-content">
+                            <div class="card-top">
+                                <span class="card-tagline">Video Production</span>
+                                <span class="card-badge">Video Editing</span>
+                            </div>
+                            <div class="card-bottom">
+                                <div>
+                                    <h3 class="card-title">Video Editing</h3>
+                                    <p class="card-subtitle">Multimedia Production</p>
+                                    <p class="card-description">Short-form cinematic video composition and editing. Creating engaging visual content through precise cuts, transitions, color grading, and audio synchronization.</p>
+                                </div>
+                                <div class="card-tags">
+                                    <span>Video Editing</span>
+                                    <span>Color Grading</span>
+                                    <span>Motion Graphics</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 5: Editorial Cartooning -->
+                    <div class="exp-carousel-slide">
+                        <div class="card-bg" style="background-image: url('images/editorial.jpg');"></div>
+                        <div class="card-overlay"></div>
+                        <div class="card-content">
+                            <div class="card-top">
+                                <span class="card-tagline">Visual journalism.</span>
+                                <span class="card-badge">RSPC 2019</span>
+                            </div>
+                            <div class="card-bottom">
+                                <div>
+                                    <h3 class="card-title">Editorial Cartooning</h3>
+                                    <p class="card-subtitle">Regional Schools Press Conference</p>
+                                    <p class="card-description">Competed in the Regional Schools Press Conference (Filipino Category), demonstrating high-pressure conceptual sketching and visual journalism.</p>
+                                </div>
+                                <div class="card-tags">
+                                    <span>Visual Journalism</span>
+                                    <span>Conceptual Sketching</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1213,154 +1349,17 @@
                 </div>
             </div>
 
-            <!-- Experiences Premium Card Carousel -->
-            <div id="experience" class="slide-in-right">
-                <div class="flex items-center justify-between mb-6">
-                    <h3 class="text-sm font-mono uppercase tracking-widest text-[#8B9259] font-bold">✦ Professional Experiences</h3>
-                    <div class="flex gap-2">
-                        <button onclick="changeExpSlide(-1)" class="exp-nav-btn" aria-label="Previous slide">⟵</button>
-                        <button onclick="changeExpSlide(1)" class="exp-nav-btn" aria-label="Next slide">⟶</button>
-                    </div>
-                </div>
-
-                <div class="exp-carousel-container">
-                    <div class="exp-carousel-track" id="expCarouselTrack">
-                        
-
-
-                        <!-- Slide 2: OJT - Municipality of Ligao -->
-                        <div class="exp-carousel-slide">
-                            <div class="card-bg" style="background-image: url('images/lgu-ligao.jpg');"></div>
-                            <div class="card-overlay"></div>
-                            <div class="card-content">
-                                <div class="card-top">
-                                    <span class="card-tagline">Building systems.</span>
-                                    <span class="card-badge">OJT</span>
-                                </div>
-                                <div class="card-bottom">
-                                    <div>
-                                        <h3 class="card-title">Municipality of Ligao</h3>
-                                        <p class="card-subtitle">LGU Ligao CPDO</p>
-                                        <p class="card-description">Built the Konstructo Building Permit Management System — a comprehensive platform digitizing the entire permit lifecycle.</p>
-                                    </div>
-                                    <div class="card-tags">
-                                        <span>Full-Stack</span>
-                                        <span>Laravel</span>
-                                        <span>Livewire</span>
-                                        <span>Feb 2026 – May 2026</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Slide 3: Scientia Publication -->
-                        <div class="exp-carousel-slide">
-                            <div class="card-bg" style="background-image: url('images/scientia.png');"></div>
-                            <div class="card-overlay"></div>
-                            <div class="card-content">
-                                <div class="card-top">
-                                    <span class="card-tagline">Storytelling through design.</span>
-                                    <span class="card-badge">BU College of Science</span>
-                                </div>
-                                <div class="card-bottom">
-                                    <div>
-                                        <h3 class="card-title">Scientia Publication</h3>
-                                        <p class="card-subtitle">Editorial & UI/UX Design</p>
-                                        <p class="card-description">Modern editorial layouts, high-impact graphics, and strategic UX design for digital storytelling.</p>
-                                    </div>
-                                    <div class="card-tags">
-                                        <span>Editorial Layout</span>
-                                        <span>UI/UX Design</span>
-                                        <span>2023 – Present</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Slide 4: Freelance Digital Artist -->
-                        <div class="exp-carousel-slide">
-                            <div class="card-bg" style="background-image: url('images/digital-art.png');"></div>
-                            <div class="card-overlay"></div>
-                            <div class="card-content">
-                                <div class="card-top">
-                                    <span class="card-tagline">Create without limits.</span>
-                                    <span class="card-badge">Freelance</span>
-                                </div>
-                                <div class="card-bottom">
-                                    <div>
-                                        <h3 class="card-title">Digital Artist</h3>
-                                        <p class="card-subtitle">Independent Creative</p>
-                                        <p class="card-description">Custom digital illustrations, character designs, and background art for diverse clients across multiple industries.</p>
-                                    </div>
-                                    <div class="card-tags">
-                                        <span>Illustration</span>
-                                        <span>Character Design</span>
-                                        <span>2022 – Present</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                                                <!-- Slide 1: Digital Art & Video Production -->
-                        <div class="exp-carousel-slide">
-                            <div class="card-bg" style="background-image: url('images/video.png');"></div>
-                            <div class="card-overlay"></div>
-                            <div class="card-content">
-                                <div class="card-top">
-                                    <span class="card-tagline">Digital Art & Video</span>
-                                    <span class="card-badge">Multimedia Production</span>
-                                </div>
-                                <div class="card-bottom">
-                                    <div>
-                                        <h3 class="card-title">Digital Art & Video</h3>
-                                        <p class="card-subtitle">Multimedia Production</p>
-                                        <p class="card-description">Independent multimedia workspace focused on custom digital illustrations and short-form cinematic video composition.</p>
-                                    </div>
-                                    <div class="card-tags">
-                                        <span>Illustration</span>
-                                        <span>Video Editing</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Slide 5: Editorial Cartooning -->
-                        <div class="exp-carousel-slide">
-                            <div class="card-bg" style="background-image: url('images/editorial.jpg');"></div>
-                            <div class="card-overlay"></div>
-                            <div class="card-content">
-                                <div class="card-top">
-                                    <span class="card-tagline">Visual journalism.</span>
-                                    <span class="card-badge">RSPC 2019</span>
-                                </div>
-                                <div class="card-bottom">
-                                    <div>
-                                        <h3 class="card-title">Editorial Cartooning</h3>
-                                        <p class="card-subtitle">Regional Schools Press Conference</p>
-                                        <p class="card-description">Competed in the Regional Schools Press Conference (Filipino Category), demonstrating high-pressure conceptual sketching and visual journalism.</p>
-                                    </div>
-                                    <div class="card-tags">
-                                        <span>Visual Journalism</span>
-                                        <span>Conceptual Sketching</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- Carousel Dots -->
-                <div class="flex justify-center gap-2 mt-4">
-                    <span class="exp-dot active" onclick="goToExpSlide(0)"></span>
-                    <span class="exp-dot" onclick="goToExpSlide(1)"></span>
-                    <span class="exp-dot" onclick="goToExpSlide(2)"></span>
-                    <span class="exp-dot" onclick="goToExpSlide(3)"></span>
-                    <span class="exp-dot" onclick="goToExpSlide(4)"></span>
-                </div>
+            <!-- Carousel Dots -->
+            <div class="flex justify-center gap-2 mt-4">
+                <span class="exp-dot active" onclick="goToExpSlide(0)"></span>
+                <span class="exp-dot" onclick="goToExpSlide(1)"></span>
+                <span class="exp-dot" onclick="goToExpSlide(2)"></span>
+                <span class="exp-dot" onclick="goToExpSlide(3)"></span>
+                <span class="exp-dot" onclick="goToExpSlide(4)"></span>
             </div>
         </div>
     </div>
+</div>
 
     <!-- SECTION 4: TOOLS -->
     <div id="tools" class="section-4 w-full border-t border-[#717744]/10 py-20 px-6 transition-theme">
@@ -1720,12 +1719,6 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                     </svg>
                     Send Email
-                </a>
-                <a href="#" class="px-6 py-3 rounded-full border border-[#717744] text-[#C5CA99] font-semibold text-sm hover:bg-[#717744] hover:text-white transition-all duration-300 hover:scale-105 flex items-center gap-2">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-                    </svg>
-                    View Projects
                 </a>
             </div>
 
